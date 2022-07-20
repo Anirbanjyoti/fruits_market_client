@@ -1,11 +1,14 @@
 import React from "react";
 import "./Home.css";
-import img1 from "../../Sources/Images/online-grocery-gurgaon.jpg";
-import img2 from "../../Sources/Images/3-2-vegetable-transparent.png";
+import img1 from "../../Sources/Images/3-2-vegetable-transparent.png";
+import img2 from "../../Sources/Images/Deluxe-Fruit-Basket_900x.jpg";
 import img3 from "../../Sources/Images/pulses.png";
 import img4 from "../../Sources/Images/fruit-1.png";
 import img5 from "../../Sources/Images/free-delivery-1-1.png";
 import img6 from "../../Sources/Images/grocery.png";
+import img7 from "../../Sources/Images/Layer 0 1.webp";
+import img8 from "../../Sources/Images/SUL_1646-removebg-preview.webp";
+import img9 from "../../Sources/Images/6db49b9e7164ef871bdb6b1d5e96620f.jpg";
 import testimonial from "../../Sources/Images/buy-fresh-fruits-online.jpg";
 import Header from "../Shared/Header/Header";
 
@@ -39,13 +42,22 @@ const Home = () => {
         <div className="home-veg-prod">
           <p><img src={img1} alt="images"></img><br></br>
           <b>Vegetables</b><br></br>
-          <button className="btn btn-success">Click Here</button></p>
+          <button className="btn btn-success">Click to Quantity</button></p>
           <p><img src={img2} alt="images"></img><br></br>
           <b>Fruits</b><br></br>
-          <button className="btn btn-success">Click Here</button></p>
+          <button className="btn btn-success">Click to Quantity</button></p>
           <p><img src={img3} alt="images"></img><br></br>
           <b>Seeds</b><br></br>
-          <button className="btn btn-success">Click Here</button></p>
+          <button className="btn btn-success">Click to Quantity</button></p>
+          <p><img src={img7} alt="images"></img><br></br>
+          <b>Spice</b><br></br>
+          <button className="btn btn-success">Click to Quantity</button></p>
+          <p><img src={img8} alt="images"></img><br></br>
+          <b>Beverage</b><br></br>
+          <button className="btn btn-success">Click to Quantity</button></p>
+          <p><img src={img9} alt="images"></img><br></br>
+          <b>Nuts</b><br></br>
+          <button className="btn btn-success">Click to Quantity</button></p>
           <p><img className="down-fruits" src={img4} alt="images"></img><br></br>
           <b>Beverage</b></p>
           <p><img className="down-fruits" src={img5} alt="images"></img><br></br>
