@@ -19,7 +19,7 @@ const Header = () => {
     {/* NavBAr START*/}
     <>
       <Navbar bg="light" variant="light">
-        <Container>
+        <Container className="header-container">
           <Navbar.Brand as={Link} to="/"><img src={logo} alt='images'></img></Navbar.Brand>
           <Nav>
             <Nav.Link as={Link} to="/home">Home</Nav.Link>

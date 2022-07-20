@@ -7,10 +7,12 @@ import img4 from "../../Sources/Images/fruit-1.png";
 import img5 from "../../Sources/Images/free-delivery-1-1.png";
 import img6 from "../../Sources/Images/grocery.png";
 import testimonial from "../../Sources/Images/buy-fresh-fruits-online.jpg";
+import Header from "../Shared/Header/Header";
 
 const Home = () => {
   return (
     <div>
+    <Header></Header>
       <h1 className="fancy-title">
         Fresh Fruits Online & Fresh Vegetables Online
       </h1>

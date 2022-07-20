@@ -5,7 +5,7 @@ a.navbar-brand img {
     position: relative;
     margin-top: -16px;
 }
-.container {
+.header-container {
     position: absolute;
     z-index: 999;
     margin-top:20%;
