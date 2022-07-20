@@ -29,7 +29,7 @@ const PagesHeader = () => {
                 <>
                   <Nav.Link
                   as={Link} to="/manage">
-                    ManageInv.
+                    Manage Items
                   </Nav.Link>
                   <Nav.Link onClick={logout}>
                     <span style={{ color: "#FFF" }}>{user.displayName}</span>{" "}

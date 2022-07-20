@@ -6,3 +6,6 @@
     font-size: 30px;
     text-transform: uppercase;
 }
+.inventory-product button{
+    width: 100px;
+}

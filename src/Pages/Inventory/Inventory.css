@@ -3,6 +3,12 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 100px;
     width: 1000px;
-    margin: auto;
+    margin: 100px auto;
     align-items: center;
+}
+.inventory-manage {
+    display: flex;
+    width: 700px;
+    margin: auto;
+    justify-content: center;
 }

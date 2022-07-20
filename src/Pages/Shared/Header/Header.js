@@ -42,9 +42,10 @@ const Header = () => {
               {user ? (
                 <>
                   <Nav.Link
-                  as={Link} to="/manage">
-                    ManageInv.
+                  as={Link} to="/manage" style={{ fontWeight:'600' }}>
+                    <i>Manage Items</i>
                   </Nav.Link>
+                  
                   <Nav.Link onClick={logout}>
                     <span style={{ color: "#FE5C5C" }}>{user.displayName}</span>{" "}
                     Log Out
