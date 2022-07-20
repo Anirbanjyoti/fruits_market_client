@@ -11,9 +11,16 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import logo from '../../../Sources/Images/logo-est.png'
+import auth from "../../../firebase.init";
+import { signOut } from "firebase/auth";
+import { useAuthState } from "react-firebase-hooks/auth";
 
 
 const Header = () => {
+  const [user] = useAuthState(auth);
+  const logout = () => {
+    signOut(auth);
+  };
   return (
     <div>
     {/* NavBAr START*/}
@@ -25,7 +32,12 @@ const Header = () => {
             <Nav.Link as={Link} to="/home">Home</Nav.Link>
             <Nav.Link as={Link} to="/About">About</Nav.Link>
             <Nav.Link as={Link} to="/registration">Registration</Nav.Link>
+            {
+              user? (
+              <Nav.Link onClick={logout}><span style={{color:'#FE5C5C'}}>{user.displayName}</span> Log Out</Nav.Link>
+              ) : 
             <Nav.Link as={Link} to="/login">Login</Nav.Link>
+            }
           </Nav>
         </Container>
       </Navbar>
