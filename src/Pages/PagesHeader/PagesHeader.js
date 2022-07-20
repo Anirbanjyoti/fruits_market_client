@@ -26,7 +26,16 @@ const PagesHeader = () => {
             <Nav.Link as={Link} to="/registration">Registration</Nav.Link>
             {
               user? (
-              <Nav.Link onClick={logout}><span style={{color:'#FFF'}}>{user.displayName}</span> Log Out</Nav.Link>
+                <>
+                  <Nav.Link
+                  as={Link} to="/manage">
+                    ManageInv.
+                  </Nav.Link>
+                  <Nav.Link onClick={logout}>
+                    <span style={{ color: "#FFF" }}>{user.displayName}</span>{" "}
+                    Log Out
+                  </Nav.Link>
+                </>
               ) : 
             <Nav.Link as={Link} to="/login">Login</Nav.Link>
             }

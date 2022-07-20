@@ -1,12 +1,16 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import useSingleFruit from "../../Hooks/useSingleFruit";
 import PagesHeader from "../PagesHeader/PagesHeader";
-import './ProductDetails.css'
+import "./ProductDetails.css";
 
 const ProductDetails = () => {
   const { productId } = useParams();
   const [fruit] = useSingleFruit(productId);
 
+  const navigate = useNavigate();
+  const navigateToCheckout = () => {
+    navigate(`/checkout`);
+  };
   return (
     <div>
       <PagesHeader></PagesHeader>
@@ -18,7 +22,7 @@ const ProductDetails = () => {
           <h3>Name: {fruit.name}</h3>
           <h4>Price {fruit.price}</h4>
           <p>{fruit.description}</p>
-          <button>Checkout</button>
+          <button onClick={navigateToCheckout}>Delivered</button>
         </div>
       </div>
     </div>

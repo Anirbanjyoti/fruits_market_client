@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import "./Home.css";
 import img4 from "../../Sources/Images/fruit-1.png";
 import img5 from "../../Sources/Images/free-delivery-1-1.png";
@@ -6,16 +5,10 @@ import img6 from "../../Sources/Images/grocery.png";
 import testimonial from "../../Sources/Images/buy-fresh-fruits-online.jpg";
 import Header from "../Shared/Header/Header";
 import Product from "../Product/Product";
+import useAllFruits from "../../Hooks/useAllFruits/useALlFruits";
 
 const Home = () => {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    const url = "http://localhost:5000/fruits";
-    fetch(url)
-      .then((res) => res.json())
-      .then((data) => setProducts(data));
-  }, []);
+ const [products] =useAllFruits();
 
   return (
     <div>

@@ -1,5 +1,5 @@
 import React from "react";
-import './Header.css'
+import "./Header.css";
 import { Link } from "react-router-dom";
 // Carousel
 import Carousel from "react-bootstrap/Carousel";
@@ -7,14 +7,13 @@ import slide1 from "../../../Sources/Images/fresh-fruit-delivery-in-gurgaon.jpg"
 import slide2 from "../../../Sources/Images/online-vegetables-in-gurgaon.jpg";
 // import slide3 from "../../../Sources/Images/online-vegetables-in-gurgaon.jpg";
 // navbar
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import logo from '../../../Sources/Images/logo-est.png'
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import logo from "../../../Sources/Images/logo-est.png";
 import auth from "../../../firebase.init";
 import { signOut } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
-
 
 const Header = () => {
   const [user] = useAuthState(auth);
@@ -23,26 +22,44 @@ const Header = () => {
   };
   return (
     <div>
-    {/* NavBAr START*/}
-    <>
-      <Navbar bg="light" variant="light">
-        <Container className="header-container">
-          <Navbar.Brand as={Link} to="/"><img src={logo} alt='images'></img></Navbar.Brand>
-          <Nav>
-            <Nav.Link as={Link} to="/home">Home</Nav.Link>
-            <Nav.Link as={Link} to="/About">About</Nav.Link>
-            <Nav.Link as={Link} to="/registration">Registration</Nav.Link>
-            {
-              user? (
-              <Nav.Link onClick={logout}><span style={{color:'#FE5C5C'}}>{user.displayName}</span> Log Out</Nav.Link>
-              ) : 
-            <Nav.Link as={Link} to="/login">Login</Nav.Link>
-            }
-          </Nav>
-        </Container>
-      </Navbar>
-    </>
-    {/* NavBAr END */}
+      {/* NavBAr START*/}
+      <>
+        <Navbar bg="light" variant="light">
+          <Container className="header-container">
+            <Navbar.Brand as={Link} to="/">
+              <img src={logo} alt="images"></img>
+            </Navbar.Brand>
+            <Nav>
+              <Nav.Link as={Link} to="/home">
+                Home
+              </Nav.Link>
+              <Nav.Link as={Link} to="/About">
+                About
+              </Nav.Link>
+              <Nav.Link as={Link} to="/registration">
+                Registration
+              </Nav.Link>
+              {user ? (
+                <>
+                  <Nav.Link
+                  as={Link} to="/manage">
+                    ManageInv.
+                  </Nav.Link>
+                  <Nav.Link onClick={logout}>
+                    <span style={{ color: "#FE5C5C" }}>{user.displayName}</span>{" "}
+                    Log Out
+                  </Nav.Link>
+                </>
+              ) : (
+                <Nav.Link as={Link} to="/login">
+                  Login
+                </Nav.Link>
+              )}
+            </Nav>
+          </Container>
+        </Navbar>
+      </>
+      {/* NavBAr END */}
       <Carousel>
         <Carousel.Item>
           <img className="d-block w-100" src={slide1} alt="First slide" />

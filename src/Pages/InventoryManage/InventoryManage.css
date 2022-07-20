@@ -1,0 +1,8 @@
+.inventory-product img {
+    width: 300px;
+}
+.inventory-product {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
