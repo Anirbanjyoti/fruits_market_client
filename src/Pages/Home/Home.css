@@ -1,0 +1,74 @@
+body{
+    font-family: Open Sans;
+}
+.home-container{
+    width: 1270px;
+    margin: auto;
+    text-align: center;
+}
+.home-veg-prod {
+    display: grid;
+    grid-gap: 100px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+.home-veg-prod img {
+    width: 300px;
+}
+.down-fruits{
+    width: 110px !important;
+}
+.fancy {
+    margin: 100px 0;
+}
+.fancy-title {
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-size: 48px;
+    color: #252525;
+    text-align: center;
+    font-style: inherit;
+    font-weight: 300;
+    margin: 100px 0;
+    padding-top: 0px;
+}
+.fancy-para {
+    color: #444;
+    font-size: 19px;
+    line-height: 2em;
+}
+.testimonials{
+    position: relative;
+}
+.testimonials img{
+    background-image: cov;
+   height: 100%;
+   width: 100%;
+}
+.left{
+    height: 50%;
+    width: 50%;
+    background: #D0E7F5;
+    padding: 130px;
+    position: relative;
+}
+.right{
+    height: 50%;
+    width: 50%;
+    background: #F1C8B0;
+    padding: 130px;
+    position: relative;
+}
+.info {
+    display: flex;
+    margin-top: -100px;
+    width: 100%;
+}
+.bar {
+    height: 135px;
+    background: white;
+    z-index: 99999;
+    position: absolute;
+    width: 100%;
+}
