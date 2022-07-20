@@ -1,41 +1,41 @@
 [
     {
-            "id": 1,
+           
             "name": "Vegetables",
             "price": "300",
             "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
             "img": "https://i.ibb.co/9wmTqX7/3-2-vegetable-transparent.png"
     },
     {
-            "id": 2,
+           
             "name": "Fruits",
             "price": "300",
             "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
             "img": "https://i.ibb.co/G7TMjWm/Deluxe-Fruit-Basket-900x.jpg"
     },
     {
-            "id": 3,
+           
             "name": "Seeds",
             "price": "300",
             "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
             "img": "https://i.ibb.co/THRQ54G/pulses.png"
     },
     {
-            "id": 4,
+           
             "name": "Spice",
             "price": "300",
             "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
             "img": "https://i.ibb.co/qdbtN9G/Layer-0-1.webp"
     },
     {
-            "id": 5,
+           
             "name": "Beverage",
             "price": "300",
             "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",
             "img": "https://i.ibb.co/sgtbGHB/SUL-1646-removebg-preview.webp"
     },
     {
-            "id": 6,
+         
             "name": "Nuts",
             "price": "300",
             "description": "Lorem ipsum dolor sit amet, consectetu radipisi cing elitBeatae autem aperiam nequ quaera molestias voluptatibus harum ametipsa.",

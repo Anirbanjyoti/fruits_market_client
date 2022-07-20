@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const Product = ({ p }) => {
-  const {id, img, name } = p;
+  const {_id, img, name } = p;
   const navigate = useNavigate();
   //   console.log(img);
   const navigateToDetails = (id) => {
@@ -15,7 +15,7 @@ const Product = ({ p }) => {
       <br></br>
       <b>{name}</b>
       <br></br>
-      <button onClick={() => navigateToDetails(id)} className="btn btn-success">
+      <button onClick={() => navigateToDetails(_id)} className="btn btn-success">
         Click to Details
       </button>
     </div>

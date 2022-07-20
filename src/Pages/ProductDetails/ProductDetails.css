@@ -1,0 +1,10 @@
+.productDetails {
+    display: flex;
+    width: 800px;
+    margin: 100px auto;
+    align-items: center;
+}
+.productDetails img {
+    width: 400px;
+    margin-right: 50px;
+}
