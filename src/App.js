@@ -20,7 +20,7 @@ function App() {
         <Route path="/about" element={<About />}></Route>
 
         <Route
-          path="/details"
+          path="/details/:productId"
           element={
             <RequireAuth>
               <ProductDetails />
