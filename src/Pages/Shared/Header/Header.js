@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import Carousel from "react-bootstrap/Carousel";
 import slide1 from "../../../Sources/Images/fresh-fruit-delivery-in-gurgaon.jpg";
 import slide2 from "../../../Sources/Images/online-vegetables-in-gurgaon.jpg";
-import slide3 from "../../../Sources/Images/online-vegetables-in-gurgaon.jpg";
+// import slide3 from "../../../Sources/Images/online-vegetables-in-gurgaon.jpg";
 // navbar
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
