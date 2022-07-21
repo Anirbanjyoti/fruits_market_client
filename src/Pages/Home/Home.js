@@ -73,7 +73,7 @@ const Home = () => {
       <div className="best-seller">
         <h1>Best Seller</h1>
         <div className="best-seller-items">
-          <div>
+          <div  className="item">
             <p>
               <h3 className="animate-scale">Dry Food</h3>
               <button>Shop Now</button>
@@ -83,7 +83,7 @@ const Home = () => {
               alt="images"
             ></img>
           </div>
-          <div>
+          <div className="item">
             <p>
               <h3 className="animate-scale">Frozen Food</h3>
               <button>Shop Now</button>
@@ -93,7 +93,7 @@ const Home = () => {
               alt="images"
             ></img>
           </div>
-          <div>
+          <div  className="item">
             <p>
              <h3 className="animate-scale">Diet Special</h3>
               <button>Shop Now</button>
