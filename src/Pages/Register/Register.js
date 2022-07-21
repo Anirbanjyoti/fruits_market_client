@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Loading from "../Shared/Loading/Loading";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
 import PagesHeader from "../PagesHeader/PagesHeader";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   // const navigate = useNavigate();
@@ -92,8 +91,13 @@ const Register = () => {
           Sign Up
         </Button>
       </Form>
+      <p>
+            Already have an account?
+            <Link className="ps-2 text-decoration-none" to="/login">
+              Please Login!
+            </Link>
+          </p>
     </div>
-    <ToastContainer></ToastContainer>
     </div>
   );
 };
