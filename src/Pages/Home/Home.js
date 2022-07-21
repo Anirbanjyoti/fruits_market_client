@@ -37,7 +37,7 @@ const Home = () => {
         </div>
         {/* Product section */}
         <div className="home-veg-prod">
-          {products.map((p) => (
+          {products.slice(0, 6).map((p) => (
             <Product key={p.id} p={p}></Product>
           ))}
         </div>
