@@ -2,9 +2,9 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 100px;
-    width: 1000px;
+    width: 900px;
     margin: 100px auto;
-    align-items: center;
+    justify-content: center;
 }
 .inventory-manage {
     display: flex;
@@ -23,4 +23,14 @@
     font-size: 30px;
     border: 1px solid;
     padding: 50px 0;
+}
+.inventory-product img {
+    width: 300px;
+}
+.inventory-product {
+    text-align: center;
+    font-size: 30px;
+}
+.inventory-product button{
+    width: 100px;
 }

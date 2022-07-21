@@ -1,7 +1,7 @@
 import React from "react";
 import PagesHeader from "../PagesHeader/PagesHeader";
 import { useForm } from "react-hook-form";
-import { Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./AddItem.css";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Nav } from "react-bootstrap";
@@ -10,6 +10,8 @@ import auth from "../../firebase.init";
 import "./AddItem.css";
 
 const AddItems = () => {
+  const [user] = useAuthState(auth);
+  const navigate =useNavigate()
   const { register, handleSubmit, acknowledged } = useForm();
   const onSubmit = (data) => {
     // console.log(data);
@@ -25,12 +27,12 @@ const AddItems = () => {
       .then((result) => {
         console.log(result);
         if (acknowledged) {
-          Navigate("/manage");
+          navigate("/manage");
         }
       });
   };
 
-  const [user] = useAuthState(auth);
+
   return (
     <div>
       <PagesHeader></PagesHeader>
