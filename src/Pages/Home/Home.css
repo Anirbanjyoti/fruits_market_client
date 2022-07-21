@@ -65,10 +65,22 @@ body{
     margin-top: -100px;
     width: 100%;
 }
-.bar {
-    height: 135px;
-    background: white;
-    z-index: 99999;
-    position: absolute;
+
+.shipping-info {
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0 0;
     width: 100%;
+    padding: 30px 0;
+    background: #00ffff2b;
+}
+.testi {
+    position: absolute;
+    color: white;
+    text-align: center;
+    width: 800px;
+    margin: 25%;
+}
+.testi p{
+font-size: 20px;
 }

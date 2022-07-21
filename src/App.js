@@ -10,6 +10,8 @@ import ProductDetails from "./Pages/ProductDetails/ProductDetails";
 import RequireAuth from "./Pages/RequireAuth/RequireAuth";
 import Checkout from "./Pages/Checkout/Checkout";
 import Inventory from "./Pages/Inventory/Inventory";
+import AddItems from "./Pages/AddItems/AddItems";
+import MyItem from "./Pages/MyItem/MyItem";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/checkout" element={<Checkout/>}></Route>
         <Route path="/manage" element={<Inventory/>}></Route>
+        <Route path="/myitem" element={<MyItem/>}></Route>
+        <Route path="/add" element={<AddItems/>}></Route>
         <Route
           path="/details/:productId"
           element={

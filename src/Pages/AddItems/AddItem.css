@@ -1,0 +1,16 @@
+.addItem{
+    width: 600px;
+    margin: 100px auto;
+}
+.inventory-manage {
+    display: flex;
+    width: 700px;
+    margin: auto;
+    justify-content: center;
+}
+.inventory-manage a {
+    background: black;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 5px 25px;
+}

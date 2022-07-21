@@ -22,25 +22,20 @@ const Inventory = () => {
             {/* <h1 style={{textAlign:'center', margin:'50px auto'}}>Manage Your Inventories</h1> */}
             <div className='inventory-manage'>
 
-            
             {user ? (
                 <>
                   <Nav.Link
-                  as={Link} to="/manage" style={{ fontSize:'30px',fontWeight:'600' }}>
+                  as={Link} to="/manage" style={{ fontSize:'30px',fontWeight:'600', color:'#58A43A' }}>
                     <i>Manage Items</i>
                   </Nav.Link>
                   <Nav.Link
-                  as={Link} to="/add" style={{ fontSize:'30px', fontWeight:'600' }}>
+                  as={Link} to="/add" style={{ fontSize:'30px', fontWeight:'600',color:'#58A43A' }}>
                    <i>Add Item</i> 
                   </Nav.Link>
                   <Nav.Link
-                  as={Link} to="/add" style={{ fontSize:'30px',fontWeight:'600' }}>
+                  as={Link} to="/myitem" style={{ fontSize:'30px',fontWeight:'600', color:'#58A43A' }}>
                    <i>My Item</i> 
                   </Nav.Link>
-                  {/* <Nav.Link onClick={logout}>
-                    <span style={{ color: "#FE5C5C" }}>{user.displayName}</span>{" "}
-                    Log Out
-                  </Nav.Link> */}
                 </>
               ) : (
                 <Nav.Link as={Link} to="/login">

@@ -8,7 +8,7 @@ import Product from "../Product/Product";
 import useAllFruits from "../../Hooks/useAllFruits/useALlFruits";
 
 const Home = () => {
- const [products] =useAllFruits();
+  const [products] = useAllFruits();
 
   return (
     <div>
@@ -40,26 +40,35 @@ const Home = () => {
           {products.map((p) => (
             <Product key={p.id} p={p}></Product>
           ))}
-
+        </div>
+        {/*  */}
+      </div>
+      <div className="shipping-info">
+        <p>
+          <img className="down-fruits" src={img4} alt="images"></img>
+          <br></br>
+          <b>Beverage</b>
+        </p>
+        <p>
+          <img className="down-fruits" src={img5} alt="images"></img>
+          <br></br>
+          <b>Shipping</b>
+        </p>
+        <p>
+          <img className="down-fruits" src={img6} alt="images"></img>
+          <br></br>
+          <b>Supply</b>
+        </p>
+      </div>
+      <div className="testimonials">
+        <div className="testi">
+          <h1>Best Quality</h1>
           <p>
-            <img className="down-fruits" src={img4} alt="images"></img>
-            <br></br>
-            <b>Beverage</b>
-          </p>
-          <p>
-            <img className="down-fruits" src={img5} alt="images"></img>
-            <br></br>
-            <b>Shipping</b>
-          </p>
-          <p>
-            <img className="down-fruits" src={img6} alt="images"></img>
-            <br></br>
-            <b>Supply</b>
+            We’re not your average fruit importers. We have expertise in
+            sourcing the choicest of fresh fruits from around the world and
+            distributing it across the length and breadth of India.
           </p>
         </div>
-      </div>
-      <div className="bar"></div>
-      <div className="testimonials">
         <img src={testimonial} alt="images"></img>
       </div>
       <div className="info">
