@@ -46,8 +46,7 @@ const AddItems = () => {
               to="/manage"
               style={{
                 fontSize: "30px",
-                fontWeight: "600",
-                color: "#58A43A",
+                fontWeight: "600"
               }}
             >
               <i>Manage Items</i>
@@ -57,8 +56,7 @@ const AddItems = () => {
               to="/add"
               style={{
                 fontSize: "30px",
-                fontWeight: "600",
-                color: "#58A43A",
+                fontWeight: "600"
               }}
             >
               <i>Add Item</i>
@@ -68,8 +66,7 @@ const AddItems = () => {
               to="/myitem"
               style={{
                 fontSize: "30px",
-                fontWeight: "600",
-                color: "#58A43A",
+                fontWeight: "600"
               }}
             >
               <i>My Item</i>

@@ -28,9 +28,7 @@ const Inventory = () => {
         .then((res) => res.json())
         .then((data) => toast("Fruit Has been Deleted!", data));
       const remaining = products.filter((product) => product._id !== id);
-      console.log(remaining);
       setProducts(remaining);
-      console.log(products)
     }
   };
   return (
@@ -43,21 +41,21 @@ const Inventory = () => {
             <Nav.Link
               as={Link}
               to="/manage"
-              style={{ fontSize: "30px", fontWeight: "600", color: "#58A43A" }}
+              style={{ fontSize: "30px", fontWeight: "600" }}
             >
               <i>Manage Items</i>
             </Nav.Link>
             <Nav.Link
               as={Link}
               to="/add"
-              style={{ fontSize: "30px", fontWeight: "600", color: "#58A43A" }}
+              style={{ fontSize: "30px", fontWeight: "600" }}
             >
               <i>Add Item</i>
             </Nav.Link>
             <Nav.Link
               as={Link}
               to="/myitem"
-              style={{ fontSize: "30px", fontWeight: "600", color: "#58A43A" }}
+              style={{ fontSize: "30px", fontWeight: "600" }}
             >
               <i>My Item</i>
             </Nav.Link>
@@ -70,9 +68,16 @@ const Inventory = () => {
       </div>
       <div className="inventory">
         {products.map((p) => (
-        <div key={p._id} p={p} className="inventory-product">
-          <img src={p.img} alt='images'></img><br></br>
-          <p>{p.name}</p><button onClick={() => handleDelete(p._id)}  className="btn btn-danger">Delete</button>
+          <div key={p._id} p={p} className="inventory-product">
+            <img src={p.img} alt="images"></img>
+            <br></br>
+            <p>{p.name}</p>
+            <button
+              onClick={() => handleDelete(p._id)}
+              className="btn btn-danger"
+            >
+              Delete
+            </button>
           </div>
         ))}
       </div>

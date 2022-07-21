@@ -13,10 +13,11 @@
     justify-content: center;
 }
 .inventory-manage a {
-    background: black;
+    background: #003D00;
     border-radius: 5px;
     margin: 20px;
     padding: 5px 25px;
+    color: white;
 }
 .inventory-product {
     text-align: center;
@@ -34,3 +35,7 @@
 .inventory-product button{
     width: 100px;
 }
+/* .nav-link:focus,
+.nav-link:hover{
+    color: white;
+} */

@@ -1,27 +1,34 @@
-body{
+body {
     font-family: Open Sans;
 }
-.home-container{
+
+.home-container {
     width: 1270px;
     margin: auto;
     text-align: center;
 }
+
 .home-veg-prod {
     display: grid;
     grid-gap: 100px;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     align-items: center;
+    margin-bottom: 10%;
 }
+
 .home-veg-prod img {
     width: 300px;
 }
-.down-fruits{
+
+.down-fruits {
     width: 110px !important;
 }
+
 .fancy {
     margin: 100px 0;
 }
+
 .fancy-title {
     letter-spacing: 1px;
     text-transform: capitalize;
@@ -30,36 +37,42 @@ body{
     text-align: center;
     font-style: inherit;
     font-weight: 300;
-    margin: 100px 0;
+    margin: 50px 0;
     padding-top: 0px;
 }
+
 .fancy-para {
     color: #444;
     font-size: 19px;
     line-height: 2em;
 }
-.testimonials{
+
+.testimonials {
     position: relative;
 }
-.testimonials img{
-    background-image: cov;
-   height: 100%;
-   width: 100%;
+
+.testimonials img {
+    height: 100%;
+    width: 100%;
+    margin-top: 10%;
 }
-.left{
+
+.left {
     height: 50%;
     width: 50%;
     background: #D0E7F5;
-    padding: 130px;
+    padding: 70px;
     position: relative;
 }
-.right{
+
+.right {
     height: 50%;
     width: 50%;
     background: #F1C8B0;
-    padding: 130px;
+    padding: 70px;
     position: relative;
 }
+
 .info {
     display: flex;
     margin-top: -100px;
@@ -69,18 +82,63 @@ body{
 .shipping-info {
     display: flex;
     justify-content: space-around;
-    margin: 100px 0 0;
+    position: absolute;
     width: 100%;
+    z-index: 99999;
     padding: 30px 0;
-    background: #00ffff2b;
+    background: #fff;
+    border: 35px solid beige;
 }
 .testi {
     position: absolute;
     color: white;
     text-align: center;
     width: 800px;
-    margin: 25%;
+    margin: 35% 25% 0;
 }
-.testi p{
-font-size: 20px;
+.testi p {
+    font-size: 20px;
+}
+.best-seller h1{
+    text-align: center;
+    margin:70px 0 50px;
+}
+.best-seller {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.best-seller-items {
+    display: flex;
+}
+.best-seller-items img {
+    width: 100%;
+}
+.best-seller p {
+    text-transform: uppercase;
+    position: absolute;
+    color: white;
+    padding: 8%;
+}
+.best-seller-items button {
+    background: transparent;
+    border: 1px solid white;
+    padding: 8px 58px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 26px;
+}
+.animate-scale:before {
+    content: "";
+    position: absolute;
+    top: 47%;
+    left: 46%;
+    margin: auto;
+    width: 10%;
+    height: 2px;
+    background-color: white;
+    overflow: hidden;
+    z-index: 999;
+    transition: all .5s ease;
 }

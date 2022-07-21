@@ -4,9 +4,20 @@
     margin: 50px auto 0;
     justify-content: center;
 }
-.inventory-manage a {
-    background: black;
+/* .inventory-manage a {
+    background: #a9c3c9;
     border-radius: 5px;
     margin: 20px;
     padding: 5px 25px;
+    color: #000;
+} */
+.inventory-manage a {
+    background: green;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 5px 25px;
+    color: white;
+}
+.inventory-manage a:hover {
+    color: wheat;
 }

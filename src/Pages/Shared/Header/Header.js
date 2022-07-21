@@ -24,7 +24,7 @@ const Header = () => {
     <div>
       {/* NavBAr START*/}
       <>
-        <Navbar bg="light" variant="light">
+        <Navbar bg="" variant="">
           <Container className="header-container">
             <Navbar.Brand as={Link} to="/">
               <img src={logo} alt="images"></img>
@@ -32,6 +32,9 @@ const Header = () => {
             <Nav>
               <Nav.Link as={Link} to="/home">
                 Home
+              </Nav.Link>
+              <Nav.Link as={Link} to="/blog">
+                Blog
               </Nav.Link>
               <Nav.Link as={Link} to="/About">
                 About

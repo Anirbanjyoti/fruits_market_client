@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import './Product.css'
 
 const Product = ({ p }) => {
   const {_id, img, name } = p;
@@ -10,7 +11,7 @@ const Product = ({ p }) => {
   };
 
   return (
-    <div>
+    <div className="home-page-product">
       <img src={img} alt="images"></img>
       <br></br>
       <b>{name}</b>

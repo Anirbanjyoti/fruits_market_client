@@ -5,11 +5,10 @@ a.navbar-brand img {
     position: relative;
     margin-top: -16px;
 }
-.header-container {
+nav.navbar.navbar-expand {
     position: absolute;
-    z-index: 999;
-    margin-top:20%;
-    /* padding-left: 10% !important; */
+     width: 100%;
+    z-index: 99999;
 }
 .navbar-nav a{
     font-size: 20px;
@@ -21,4 +20,8 @@ a.navbar-brand img {
     flex-wrap: inherit;
     align-items: center;
     justify-content: flex-end;
+}
+.nav-link:focus,
+.nav-link:hover{
+    color: black !important;
 }

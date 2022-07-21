@@ -1,6 +1,7 @@
 .footer h1{
     font-size: 17px;
     text-align: center;
-    background: gray;
+    background: #3f3f0e;
     padding: 30px;
+    color: #fff;
 }

@@ -17,11 +17,13 @@ const PagesHeader = () => {
     return (
         <div>
              <>
-      <Navbar bg="secondary" variant="light">
+             <div bg="" variant="">
+      <Navbar  className='navigation' bg="secondary" variant="light">
         <Container>
           <Navbar.Brand as={Link} to="/"><img src={logo} alt='images'></img></Navbar.Brand>
           <Nav>
             <Nav.Link as={Link} to="/home">Home</Nav.Link>
+            <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
             <Nav.Link as={Link} to="/About">About</Nav.Link>
             <Nav.Link as={Link} to="/registration">Registration</Nav.Link>
             {
@@ -42,6 +44,7 @@ const PagesHeader = () => {
           </Nav>
         </Container>
       </Navbar>
+      </div>
     </>
         </div>
     );

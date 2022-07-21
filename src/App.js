@@ -12,6 +12,7 @@ import Checkout from "./Pages/Checkout/Checkout";
 import Inventory from "./Pages/Inventory/Inventory";
 import AddItems from "./Pages/AddItems/AddItems";
 import MyItem from "./Pages/MyItem/MyItem";
+import Blog from "./Pages/Blog/Blog";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/checkout" element={<Checkout/>}></Route>
         <Route path="/manage" element={<Inventory/>}></Route>
         <Route path="/myitem" element={<MyItem/>}></Route>
+        <Route path="/blog" element={<Blog/>}></Route>
         <Route path="/add" element={<AddItems/>}></Route>
         <Route
           path="/details/:productId"
