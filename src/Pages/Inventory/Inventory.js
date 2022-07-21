@@ -72,7 +72,7 @@ const Inventory = () => {
         {products.map((p) => (
         <div key={p._id} p={p} className="inventory-product">
           <img src={p.img} alt='images'></img><br></br>
-          {p.name}<button onClick={() => handleDelete(p._id)}  className="btn btn-danger">Delete</button>
+          <p>{p.name}</p><button onClick={() => handleDelete(p._id)}  className="btn btn-danger">Delete</button>
           </div>
         ))}
       </div>
