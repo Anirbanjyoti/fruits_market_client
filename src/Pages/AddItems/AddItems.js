@@ -15,7 +15,7 @@ const AddItems = () => {
   const { register, handleSubmit, acknowledged } = useForm();
   const onSubmit = (data) => {
     // console.log(data);
-    const url = `http://localhost:5000/fruits`;
+    const url = `https://safe-waters-70331.herokuapp.com/fruits`;
     fetch(url, {
       method: "POST",
       headers: {

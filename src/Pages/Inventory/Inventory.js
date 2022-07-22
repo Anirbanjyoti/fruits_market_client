@@ -20,7 +20,7 @@ const Inventory = () => {
   const handleDelete = (id) => {
     const proceed = window.confirm("Are You Sure ?");
     if (proceed) {
-      const url = `http://localhost:5000/fruits/${id}`;
+      const url = `https://safe-waters-70331.herokuapp.com/fruits/${id}`;
       console.log(url);
       fetch(url, {
         method: "DELETE",
