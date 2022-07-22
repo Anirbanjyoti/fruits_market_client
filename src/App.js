@@ -13,6 +13,7 @@ import Inventory from "./Pages/Inventory/Inventory";
 import AddItems from "./Pages/AddItems/AddItems";
 import MyItem from "./Pages/MyItem/MyItem";
 import Blog from "./Pages/Blog/Blog";
+import NotFound from "./Pages/NotFound/NotFound";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/myitem" element={<MyItem/>}></Route>
         <Route path="/blog" element={<Blog/>}></Route>
         <Route path="/add" element={<AddItems/>}></Route>
+        <Route path="*" element={<NotFound/>}></Route>
         <Route
           path="/details/:productId"
           element={
